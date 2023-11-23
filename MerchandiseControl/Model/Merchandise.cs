@@ -10,13 +10,13 @@ public class Merchandise
         public int id { get; set; }
         public string name { get; set; }
         public string expirationDate { get; set; }
-        public float price { get; set; }
+        public string price { get; set; }
 
-        public Merchandise(string name, string expirationDate, float price) 
+        public Merchandise(string name, string expirationDate, string price) 
         {
             this.name = name ?? throw new ArgumentNullException (nameof(name));
             this.expirationDate = expirationDate;
-            this.price = price;
+           this.price = price;
         
         }
 }

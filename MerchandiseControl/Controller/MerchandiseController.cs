@@ -13,11 +13,13 @@ namespace MyApp.Namespace
 
         public MerchandiseController(IMerchandiseRepository merchandiseRepository)
         {
-           _merchandiseRepository = merchandiseRepository ?? throw new ArgumentNullException(nameof(MerchandiseRepository));)
+           _merchandiseRepository = merchandiseRepository ?? throw new ArgumentNullException(nameof(MerchandiseRepository));
         }
 
-        public IActionResult Add(){
-            return View();
+        public IActionResult Add(MerchandiseViewModel merchandiseView){
+            var merchandise = new Merchandise(merchandiseView.name, merchandiseView.price, null);
+            _merchandiseRepository.add(merchandise);
+            return Ok();
         }
     }
 }
