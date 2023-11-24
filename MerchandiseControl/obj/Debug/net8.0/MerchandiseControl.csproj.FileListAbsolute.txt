@@ -131,3 +131,8 @@ C:\Users\luizz\MerchandiseControl\MerchandiseControl\obj\Debug\net8.0\Merchandis
 C:\Users\luizz\MerchandiseControl\MerchandiseControl\obj\Debug\net8.0\MerchandiseControl.dll
 C:\Users\luizz\MerchandiseControl\MerchandiseControl\obj\Debug\net8.0\refint\MerchandiseControl.dll
 C:\Users\luizz\MerchandiseControl\MerchandiseControl\obj\Debug\net8.0\MerchandiseControl.pdb
+C:\Users\luizz\MerchandiseControl\MerchandiseControl\bin\Debug\net8.0\MerchandiseControl.deps.json
+C:\Users\luizz\MerchandiseControl\MerchandiseControl\bin\Debug\net8.0\MerchandiseControl.runtimeconfig.json
+C:\Users\luizz\MerchandiseControl\MerchandiseControl\bin\Debug\net8.0\MerchandiseControl.pdb
+C:\Users\luizz\MerchandiseControl\MerchandiseControl\obj\Debug\net8.0\MerchandiseControl.genruntimeconfig.cache
+C:\Users\luizz\MerchandiseControl\MerchandiseControl\obj\Debug\net8.0\ref\MerchandiseControl.dll
