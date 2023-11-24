@@ -2,9 +2,4 @@
 
 namespace MerchandiseControl;
 
-public class MerchandiseViewModel
-{
-    public required string Name { get; set; }
-    public string Brand { get; set; }
-    public string ExpirationDate {get; set;}
-}
+public record MerchandiseViewModel(string Name, string Brand, string ExpirationDate);

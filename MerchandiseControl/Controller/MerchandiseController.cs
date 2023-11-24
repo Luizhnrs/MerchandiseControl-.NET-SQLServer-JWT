@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace MyApp.Namespace
 {
-    [Route("api/[controller]")]
+    [Route("api/MerchandiseController")]
     [ApiController]
     public class MerchandiseController : ControllerBase
     {
@@ -21,6 +21,7 @@ namespace MyApp.Namespace
             _merchandiseRepository.add(merchandise);
             return Ok();
         }
+        [HttpGet]
         public IActionResult Get(){
             var merchandise = _merchandiseRepository.get();
             return Ok(merchandise);
