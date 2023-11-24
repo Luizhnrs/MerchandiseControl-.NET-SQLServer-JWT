@@ -4,6 +4,7 @@ namespace MerchandiseControl;
 
 public class MerchandiseViewModel
 {
-    public string name { get; set; }
-    public string price{ get; set; }
+    public required string Name { get; set; }
+    public string Brand { get; set; }
+    public string ExpirationDate {get; set;}
 }

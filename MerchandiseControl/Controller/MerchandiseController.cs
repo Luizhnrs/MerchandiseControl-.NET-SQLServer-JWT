@@ -15,11 +15,15 @@ namespace MyApp.Namespace
         {
            _merchandiseRepository = merchandiseRepository ?? throw new ArgumentNullException(nameof(MerchandiseRepository));
         }
-
+        [HttpPost]
         public IActionResult Add(MerchandiseViewModel merchandiseView){
-            var merchandise = new Merchandise(merchandiseView.name, merchandiseView.price, null);
+            var merchandise = new Merchandise(merchandiseView.Name, merchandiseView.Brand, null); 
             _merchandiseRepository.add(merchandise);
             return Ok();
+        }
+        public IActionResult Get(){
+            var merchandise = _merchandiseRepository.get();
+            return Ok(merchandise);
         }
     }
 }
